@@ -7,6 +7,7 @@ import './css/global.css';
 // import createHistory from 'history/createBrowserHistory';
 
 import Routes from './routes';
+import { BottomMainMenu } from './components/BottomMainMenu';
 
 // import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
@@ -29,15 +30,10 @@ const store = createStoreWithMiddleware(
 
 ReactDOM.render(
   <Provider store={store}>
-    <Routes />
-    {/* <Router>
-      <Switch>
-        <Route exact path="/" component={App} />
-        <Route path="/login" component={LoginContainer} />
-        <Route path="/:user" component={App} />
-        <Route component={App} />
-      </Switch>
-    </Router> */}
+    <div className="global">
+      <Routes />
+      <BottomMainMenu />
+    </div>
   </Provider>,
   document.getElementById('root')
 );
