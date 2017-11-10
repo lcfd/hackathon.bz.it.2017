@@ -2,15 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
-import { ConnectedRouter, routerReducer, routerMiddleware, push } from 'react-router-redux';
-
+// import { routerReducer, routerMiddleware } from 'react-router-redux';
 import './css/global.css';
 // import createHistory from 'history/createBrowserHistory';
 
 import Routes from './routes';
 
-
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 import { rootReducer } from './reducers/index';
 
