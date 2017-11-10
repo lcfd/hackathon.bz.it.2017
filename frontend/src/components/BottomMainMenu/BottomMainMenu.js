@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import '../../css/global.css';
+import '../../css/bottomMainMenu.css';
 
 class BottomMainMenu extends Component {
   render() {
-    return <div>BottomMainMenu</div>;
+    return <div className="bottomMainMenu">BottomMainMenu</div>;
   }
 }
 

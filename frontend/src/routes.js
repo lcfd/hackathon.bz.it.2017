@@ -10,7 +10,6 @@ import SetPercContainer from './containers/SetPerc';
 import ProfileContainer from './containers/Profile';
 import InvestmentsContainer from './containers/Investments';
 import StatsContainer from './containers/Stats';
-import App from './App';
 
 class Routes extends Component {
   render() {
@@ -22,7 +21,7 @@ class Routes extends Component {
           <Route path="/profile" component={ProfileContainer} />
           <Route path="/investments" component={InvestmentsContainer} />
           <Route path="/stats" component={StatsContainer} />
-          <Route component={App} />
+          {/* <Route component={App} /> */}
         </Switch>
       </Router>
     );
