@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 class AppWrapper extends Component {
   render() {
     return (
-      <div>
+      <div className={this.props.class}>
         {this.props.children}
         <BottomMainMenu>
           <div className="bottomMainMenu__element">
