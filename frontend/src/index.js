@@ -2,8 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
+import { ConnectedRouter, routerReducer, routerMiddleware, push } from 'react-router-redux';
+
 import './css/global.css';
-import App from './App';
+// import createHistory from 'history/createBrowserHistory';
+
+import Routes from './routes';
+
+
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 import { rootReducer } from './reducers/index';
 
@@ -24,7 +31,15 @@ const store = createStoreWithMiddleware(
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Routes />
+    {/* <Router>
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route path="/login" component={LoginContainer} />
+        <Route path="/:user" component={App} />
+        <Route component={App} />
+      </Switch>
+    </Router> */}
   </Provider>,
   document.getElementById('root')
 );
