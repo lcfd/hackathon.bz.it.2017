@@ -88,9 +88,22 @@
   width: 60px;
   float: right;
   border-left: solid 1px #e0e0e0; }
+  .box__left-arrow-action img {
+    margin-left: 12px; }
+
+.box__investment-content {
+  float: left;
+  padding: 16px 0; }
 
 .dashboard__your-active-investmets {
   font-size: 12px;
   font-weight: bold;
   text-align: left;
+  color: #268be2; }
+
+.box__investment-title {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
   color: #268be2; }

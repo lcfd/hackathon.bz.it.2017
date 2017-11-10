@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="24" viewBox="0 0 20 24">
+    <defs>
+        <rect id="a" width="343" height="100" rx="8"/>
+        <filter id="b" width="108.7%" height="130%" x="-4.4%" y="-11%" filterUnits="objectBoundingBox">
+            <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter2"/>
+            <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation="1.5"/>
+            <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.226987092 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+            </feMerge>
+        </filter>
+        <path id="d" d="M19.518 2.333l-.84.733 2.716 3.1h-.14a2.518 2.518 0 0 0-2.52 2.536 2.518 2.518 0 0 0 2.52 2.537c.59 0 1.12-.197 1.541-.535v11.3a1.39 1.39 0 0 1-1.4 1.41c-.785 0-1.401-.62-1.401-1.41V16.65a2.255 2.255 0 0 0-2.241-2.254h-.756V5.32a2.518 2.518 0 0 0-2.522-2.536h-7.87A2.518 2.518 0 0 0 4.082 5.32v19.782c0 .31.252.564.56.564h11.794c.31 0 .56-.254.56-.564v-9.581h.757c.616 0 1.12.507 1.12 1.127v5.354a2.518 2.518 0 0 0 2.522 2.536c1.4 0 2.52-1.127 2.52-2.536V8.533c0-.79-.28-1.521-.812-2.085l-3.586-4.115zM15.876 24.54H5.204V5.321c0-.79.616-1.409 1.4-1.409h7.873c.784 0 1.4.62 1.4 1.409v19.218zm5.378-14.399c-.784 0-1.4-.62-1.4-1.409 0-.79.616-1.409 1.4-1.409.785 0 1.4.62 1.4 1.409 0 .788-.643 1.409-1.4 1.409zm-7.003-3.044H6.968a.563.563 0 0 0-.56.564v5.636c0 .31.251.564.56.564h7.283c.309 0 .56-.254.56-.564V7.66a.563.563 0 0 0-.56-.564zm-.56 5.636H7.528V8.224h6.163v4.508zm-2.744 3.41c-.225-.226-.589-.226-.785 0L8.593 17.72a2.78 2.78 0 0 0-.812 1.973c0 .733.28 1.465.812 1.972.532.535 1.26.817 1.96.817.73 0 1.43-.282 1.962-.817a2.78 2.78 0 0 0 .812-1.972c0-.734-.28-1.466-.812-1.973l-1.568-1.579zm.783 4.762a1.666 1.666 0 0 1-2.352 0 1.666 1.666 0 0 1-.476-1.183c0-.451.168-.874.476-1.183l1.176-1.184 1.176 1.184c.309.31.476.733.476 1.183.001.45-.167.845-.476 1.183z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-20 -18)">
+        <mask id="c" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#000" filter="url(#b)" xlink:href="#a"/>
+        <use fill="#FFF" xlink:href="#a"/>
+        <g mask="url(#c)">
+            <g transform="translate(16 16)">
+                <path d="M0 0h28v28H0z"/>
+                <mask id="e" fill="#fff">
+                    <use xlink:href="#d"/>
+                </mask>
+                <use fill="#000" fill-rule="nonzero" xlink:href="#d"/>
+                <g fill="#268BE2" mask="url(#e)">
+                    <path d="M0 0h28v28H0z"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
