@@ -48,9 +48,35 @@
   padding: 0 16px;
 }
 
+.box__investment-this-week {
+  font-size: 10px;
+  font-weight: bold;
+  color: $dark-sky-blue-two;
+  padding: 0 16px;
+}
+
+.box__text-number-in-split {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: $greyish-brown;
+  margin: 15px 0 0 0;
+  strong {
+    font-size: 24px;
+  }
+}
+
+.box__text-under-number {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: $dark-sky-blue-two;
+}
+
 .box__weekly-stats-amount {
   padding: 0 16px;
   font-size: 30px;
+  color: $greyish-brown;
   strong {
     font-size: 40px;
   }
@@ -58,7 +84,9 @@
 
 .box__weekly-vertical-line {
   border-left: solid 1px #e0e0e0;
-  height: 73px;
-  margin: 0 auto;
+  height: 82px;
   width: 1px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }

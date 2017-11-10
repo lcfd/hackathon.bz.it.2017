@@ -20,13 +20,23 @@ class DashboardContainer extends Component {
           <p className="box__weekly-stats-amount">
             € <strong>40,00</strong>
           </p>
+          <p className="box__investment-this-week">Investment this week</p>
           <hr style={{ marginBottom: 0 }} />
           <div className="row">
-            <div className="col-5">1</div>
-            <div className="col-2">
+            <div className="col-6">
+              <p className="box__text-number-in-split">
+                € <strong>40,00</strong>
+              </p>
+              <p className="box__text-under-number">Weekly average</p>
               <div className="box__weekly-vertical-line" />
             </div>
-            <div className="col-5">1</div>
+
+            <div className="col-6">
+              <p className="box__text-number-in-split">
+                € <strong>40,00</strong>
+              </p>
+              <p className="box__text-under-number">Average investment</p>
+            </div>
           </div>
         </Box>
       </AppWrapper>
