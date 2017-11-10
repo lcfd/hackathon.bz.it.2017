@@ -11,5 +11,11 @@
 
 .bottomMainMenu__element {
   flex: 1;
-  text-align: center;
-  line-height: 64px; }
+  text-align: center; }
+  .bottomMainMenu__element p {
+    margin-bottom: 0;
+    line-height: 20px;
+    font-size: 10px;
+    font-weight: bold; }
+    .bottomMainMenu__element p:first-child {
+      margin: 10px 0 5px 0; }
