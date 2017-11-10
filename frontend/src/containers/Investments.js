@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import AppWrapper from '../containers/AppWrapper';
 
 class InvestmentsContainer extends Component {
   render() {
-    return <div>InvestmentsContainer</div>;
+    return <AppWrapper>InvestmentsContainer</AppWrapper>;
   }
 }
 

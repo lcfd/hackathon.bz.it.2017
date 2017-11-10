@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import AppWrapper from '../containers/AppWrapper';
+
 class DashboardContainer extends Component {
   render() {
-    return <div>Dashboard</div>;
+    return <AppWrapper>Dashboard</AppWrapper>;
   }
 }
 

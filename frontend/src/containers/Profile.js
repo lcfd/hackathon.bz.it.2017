@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import AppWrapper from '../containers/AppWrapper';
 
 class ProfileContainer extends Component {
   render() {
-    return <div>ProfileContainer</div>;
+    return <AppWrapper>ProfileContainer</AppWrapper>;
   }
 }
 

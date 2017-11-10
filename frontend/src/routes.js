@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+
 /**
  * Containers
  */
@@ -21,7 +22,6 @@ class Routes extends Component {
           <Route path="/profile" component={ProfileContainer} />
           <Route path="/investments" component={InvestmentsContainer} />
           <Route path="/stats" component={StatsContainer} />
-          {/* <Route component={App} /> */}
         </Switch>
       </Router>
     );

@@ -7,9 +7,7 @@ import './css/global.css';
 // import createHistory from 'history/createBrowserHistory';
 
 import Routes from './routes';
-import { BottomMainMenu } from './components/BottomMainMenu';
 
-// import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 import { rootReducer } from './reducers/index';
 
@@ -32,7 +30,6 @@ ReactDOM.render(
   <Provider store={store}>
     <div className="global">
       <Routes />
-      <BottomMainMenu />
     </div>
   </Provider>,
   document.getElementById('root')
