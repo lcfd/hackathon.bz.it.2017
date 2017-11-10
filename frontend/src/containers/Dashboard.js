@@ -14,6 +14,10 @@ import '../css/dashboard.css';
  */
 import salvadanaio from '../assets/img/salvadanaio.svg';
 import arrowRight from '../assets/img/arrow-right.svg';
+import fuel from '../assets/img/fuel.svg';
+import hambuger from '../assets/img/hamburger.svg';
+import plane from '../assets/img/plane.png';
+import ecommerce from '../assets/img/ecommerce.svg';
 
 class DashboardContainer extends Component {
   render() {
@@ -46,9 +50,14 @@ class DashboardContainer extends Component {
           </div>
         </Box>
         <p className="dashboard__your-active-investmets">YOUR ACTIVE INVESTMENTS</p>
+        {/* Investments */}
         <Box>
           <div className="box__investment-content">
-            <p className="box__investment-title">Fuel</p>
+            <p className="box__investment-title">
+              <img src={fuel} alt="" /> Fuel
+            </p>
+            <p className="box__investment-text">Quando spendi in Carburante investi il 5% di quello che ho speso!</p>
+            <div className="box__investment-perc-oval">5%</div>
           </div>
           <div className="box__left-arrow-action">
             <img className="" src={arrowRight} alt="" />
@@ -56,14 +65,39 @@ class DashboardContainer extends Component {
           <div className="clear" />
         </Box>
         <Box>
-          1
+          <div className="box__investment-content">
+            <p className="box__investment-title">
+              <img src={hambuger} alt="" /> Fast food
+            </p>
+            <p className="box__investment-text">Quando spendi in Carburante investi il 3% di quello che ho speso!</p>
+            <div className="box__investment-perc-oval">3%</div>
+          </div>
           <div className="box__left-arrow-action">
             <img className="" src={arrowRight} alt="" />
           </div>
           <div className="clear" />
         </Box>
         <Box>
-          1
+          <div className="box__investment-content">
+            <p className="box__investment-title">
+              <img src={ecommerce} alt="" /> Ecommerce
+            </p>
+            <p className="box__investment-text">Quando spendi in Carburante investi il 10% di quello che ho speso!</p>
+            <div className="box__investment-perc-oval">10%</div>
+          </div>
+          <div className="box__left-arrow-action">
+            <img className="" src={arrowRight} alt="" />
+          </div>
+          <div className="clear" />
+        </Box>
+        <Box>
+          <div className="box__investment-content">
+            <p className="box__investment-title">
+              <img src={plane} style={{ width: '24px' }} alt="" />Transport
+            </p>
+            <p className="box__investment-text">Quando spendi in Carburante investi il 7% di quello che ho speso!</p>
+            <div className="box__investment-perc-oval">7%</div>
+          </div>
           <div className="box__left-arrow-action">
             <img className="" src={arrowRight} alt="" />
           </div>

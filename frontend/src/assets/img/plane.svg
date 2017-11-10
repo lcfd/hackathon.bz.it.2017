@@ -27,7 +27,6 @@
                 <mask id="e" fill="#fff">
                     <use xlink:href="#d"/>
                 </mask>
-                <use fill="#000" fill-rule="nonzero" transform="rotate(25 16.417 16.363)" xlink:href="#d"/>
                 <g fill="#268BE2" mask="url(#e)">
                     <path d="M0 0h33v33H0z"/>
                 </g>

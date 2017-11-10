@@ -98,8 +98,8 @@
 }
 
 .box__left-arrow-action {
-  height: 100px;
-  line-height: 100px;
+  height: 132px;
+  line-height: 132px;
   text-align: center;
   width: 60px;
   float: right;
@@ -112,6 +112,8 @@
 .box__investment-content {
   float: left;
   padding: 16px 0;
+  width: 78%;
+  position: relative;
 }
 
 .dashboard__your-active-investmets {
@@ -125,6 +127,28 @@
   font-size: 24px;
   font-weight: 900;
   line-height: 1;
-  text-align: center;
   color: $dark-sky-blue-two;
+  img {
+    margin-right: 8px;
+  }
+}
+.box__investment-text {
+  font-size: 14px;
+  color: $greyish-brown;
+}
+
+.box__investment-perc-oval {
+  width: 32px;
+  height: 32px;
+  background-color: $dark-sky-blue-two;
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.6;
+  text-align: center;
+  color: $white-three;
+  line-height: 32px;
 }
