@@ -2,8 +2,13 @@
 
 body {
   height: 100%;
+  margin-bottom: 100px;
   font-family: 'Inter UI', sans-serif;
 }
 .global {
   // background-color: red;
+}
+
+.clear {
+  clear: both;
 }

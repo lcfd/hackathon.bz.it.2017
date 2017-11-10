@@ -29,13 +29,19 @@
   }
 }
 
+.dashboard__box-salvadanaio-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .box {
   border-radius: 8px;
   background-color: $white-three;
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 2;
-  padding: 16px 0 0 0;
+  margin-bottom: 24px;
 }
 
 .box__weekly-stats {
@@ -45,7 +51,7 @@
   letter-spacing: -0.5px;
   text-align: left;
   color: $dark-sky-blue-two;
-  padding: 0 16px;
+  padding: 16px 16px 0 16px;
 }
 
 .box__investment-this-week {
@@ -89,4 +95,20 @@
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.box__left-arrow-action {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: 60px;
+  float: right;
+  border-left: solid 1px #e0e0e0;
+}
+
+.dashboard__your-active-investmets {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  color: $dark-sky-blue-two;
 }

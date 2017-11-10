@@ -9,6 +9,10 @@ import { Box } from '../components/Box';
  * css
  */
 import '../css/dashboard.css';
+/**
+ * assets
+ */
+import salvadanaio from '../assets/img/salvadanaio.svg';
 
 class DashboardContainer extends Component {
   render() {
@@ -16,6 +20,7 @@ class DashboardContainer extends Component {
       <AppWrapper class="dashboard container">
         <DashboardHeader />
         <Box>
+          <img className="dashboard__box-salvadanaio-img" src={salvadanaio} alt=""/>
           <p className="box__weekly-stats">WEEKLY STATS</p>
           <p className="box__weekly-stats-amount">
             € <strong>40,00</strong>
@@ -38,6 +43,22 @@ class DashboardContainer extends Component {
               <p className="box__text-under-number">Average investment</p>
             </div>
           </div>
+        </Box>
+        <p className="dashboard__your-active-investmets">YOUR ACTIVE INVESTMENTS</p>
+        <Box>
+          1
+          <div className="box__left-arrow-action">-></div>
+          <div className="clear" />
+        </Box>
+        <Box>
+          1
+          <div className="box__left-arrow-action">-></div>
+          <div className="clear" />
+        </Box>
+        <Box>
+          1
+          <div className="box__left-arrow-action">-></div>
+          <div className="clear" />
         </Box>
       </AppWrapper>
     );

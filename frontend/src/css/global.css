@@ -1,4 +1,8 @@
 @import url("https://rsms.me/inter/inter-ui.css");
 body {
   height: 100%;
+  margin-bottom: 100px;
   font-family: 'Inter UI', sans-serif; }
+
+.clear {
+  clear: both; }
