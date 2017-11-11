@@ -19,11 +19,11 @@ class ProfileContainer extends Component {
       <AppWrapper class="profile container">
         <ProfileHeader userPic={peterDolonPic} user={{ name: 'Peter Dolon' }} />
         <div className="row profile__month-select">
-          <div className="col-4 right">SEPT 2017</div>
+          <div className="col-4 right">JUL 2017</div>
           <div className="col-4">
-            <span className="centered">OCT 2017</span>
+            <span className="centered">AUG 2017</span>
           </div>
-          <div className="col-4 left">NOV 2017</div>
+          <div className="col-4 left">SEPT 2017</div>
         </div>
         <p className="profile__centered-title">TOTAL EXPENSES</p>
         <p className="profile__centered-money">€ 500.00</p>

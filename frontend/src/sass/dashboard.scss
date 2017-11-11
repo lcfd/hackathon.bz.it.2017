@@ -75,6 +75,7 @@
   margin: 7px 0 0 0;
   strong {
     font-size: 24px;
+    font-weight: normal;
   }
 }
 
@@ -89,9 +90,12 @@
 .box__weekly-stats-amount {
   padding: 0 16px;
   font-size: 30px;
+  line-height: 30px;
+  margin-top: 8px;
   color: $greyish-brown;
   strong {
     font-size: 40px;
+    font-weight: normal;
   }
 }
 

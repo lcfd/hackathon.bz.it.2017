@@ -83,7 +83,7 @@ class DashboardContainer extends Component {
               <p className="box__text-number-in-split">
                 € <strong>40,00</strong>
               </p>
-              <p className="box__text-under-number">Monthly average</p>
+              <p className="box__text-under-number">Previous month</p>
               <div className="box__weekly-vertical-line" />
             </div>
 
@@ -91,7 +91,7 @@ class DashboardContainer extends Component {
               <p className="box__text-number-in-split">
                 € <strong>40,00</strong>
               </p>
-              <p className="box__text-under-number">Average investment</p>
+              <p className="box__text-under-number">Monthly average</p>
             </div>
           </div>
         </Box>

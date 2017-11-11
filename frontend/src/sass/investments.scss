@@ -84,9 +84,22 @@
   padding: 0 16px;
 }
 
+.box__investment-sected-money-value--small {
+  @extend .box__investment-sected-money-value;
+  font-size: 12px;
+}
+
 .box__investment-graph {
   width: 100%;
   position: absolute;
   left: 0;
   bottom: 42px;
+}
+
+.box__current-gain-gray {
+  padding: 0 16px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: #aeaeae;
 }
