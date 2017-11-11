@@ -18,7 +18,7 @@ class SideMenu extends Component {
             <div className="col-3 col-md-4">
               <img className="profile__header-user-pic" src={peterDolonPic} alt="" />
             </div>
-            <div className="col-7 col-md-8">
+            <div className="col-7 col-md-8 sidemenu__hi">
               Hi <strong>{this.props.user.fullName}</strong> 👋
             </div>
             <div className="col-1 hidden-md-up" />

@@ -10,6 +10,10 @@
     position: relative;
     z-index: 2;
   }
+  .sidemenu__hi {
+    line-height: 45px;
+    white-space: nowrap;
+  }
 
   .sidemenu__menu-list {
     list-style: none;
