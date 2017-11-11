@@ -151,7 +151,9 @@ class DashboardContainer extends Component {
                     <p className="box__investment-title">
                       <img src={fuel} alt="" /> Fuel
                     </p>
-                    <p className="box__investment-text">When I buy fuel I want to invest the 10% of what I paid.</p>
+                    <p className="box__investment-text">
+                      When I buy fuel I want to invest the {this.props.user.fuelPercentage}% of what I paid.
+                    </p>
                     <div className="box__investment-perc-oval">{this.props.user.fuelPercentage}%</div>
                   </div>
                   <div className="box__left-arrow-action" data-name="fuel" onClick={e => this.handleClickSetting(e)}>
@@ -189,7 +191,8 @@ class DashboardContainer extends Component {
                       <img src={hambuger} alt="" /> Fast food
                     </p>
                     <p className="box__investment-text">
-                      When I buy a meal from a fast food I want to invest the 10% of what I paid.
+                      When I buy a meal from a fast food I want to invest the {this.props.user.fastFoodPercentage}% of
+                      what I paid.
                     </p>
                     <div className="box__investment-perc-oval">{this.props.user.fastFoodPercentage}%</div>
                   </div>
@@ -236,7 +239,8 @@ class DashboardContainer extends Component {
                       <img src={ecommerce} alt="" /> Ecommerce
                     </p>
                     <p className="box__investment-text">
-                      When I buy products from an ecommerce I want to invest the 10% of what I paid.
+                      When I buy products from an ecommerce I want to invest the {this.props.user.ecommercePercentage}%
+                      of what I paid.
                     </p>
                     <div className="box__investment-perc-oval">{this.props.user.ecommercePercentage}%</div>
                   </div>
@@ -282,7 +286,7 @@ class DashboardContainer extends Component {
                     <p className="box__investment-title">
                       <img src={plane} style={{ width: '24px' }} alt="" />Transport
                     </p>
-                    <p className="box__investment-text">When I travel I want to invest the 7% of what I paid.</p>
+                    <p className="box__investment-text">When I travel I want to invest the {this.props.user.transportPercentage}% of what I paid.</p>
                     <div className="box__investment-perc-oval">{this.props.user.transportPercentage}%</div>
                   </div>
                   <div
