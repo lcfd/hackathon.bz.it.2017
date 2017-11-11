@@ -14,6 +14,7 @@ import '../css/dashboard.css';
  */
 import salvadanaio from '../assets/img/salvadanaio.svg';
 import arrowRight from '../assets/img/arrow-right.svg';
+import edit from '../assets/img/edit.svg';
 import fuel from '../assets/img/fuel.svg';
 import hambuger from '../assets/img/hamburger.svg';
 import plane from '../assets/img/plane.png';
@@ -60,7 +61,7 @@ class DashboardContainer extends Component {
             <div className="box__investment-perc-oval">5%</div>
           </div>
           <div className="box__left-arrow-action">
-            <img className="" src={arrowRight} alt="" />
+            <img className="" src={edit} alt="" />
           </div>
           <div className="clear" />
         </Box>
@@ -75,7 +76,7 @@ class DashboardContainer extends Component {
             <div className="box__investment-perc-oval">3%</div>
           </div>
           <div className="box__left-arrow-action">
-            <img className="" src={arrowRight} alt="" />
+            <img className="" src={edit} alt="" />
           </div>
           <div className="clear" />
         </Box>
@@ -90,7 +91,7 @@ class DashboardContainer extends Component {
             <div className="box__investment-perc-oval">10%</div>
           </div>
           <div className="box__left-arrow-action">
-            <img className="" src={arrowRight} alt="" />
+            <img className="" src={edit} alt="" />
           </div>
           <div className="clear" />
         </Box>
@@ -103,7 +104,7 @@ class DashboardContainer extends Component {
             <div className="box__investment-perc-oval">7%</div>
           </div>
           <div className="box__left-arrow-action">
-            <img className="" src={arrowRight} alt="" />
+            <img className="" src={edit} alt="" />
           </div>
           <div className="clear" />
         </Box>
