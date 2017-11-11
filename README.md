@@ -2,4 +2,4 @@
 
 # Bear Savings
 
-Bear Savings helps people to become AWARE of their consume behaviour.
+Bear Savings helps people to become AWARE of their consumer behaviour.
