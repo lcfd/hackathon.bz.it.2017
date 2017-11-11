@@ -4,7 +4,7 @@ class DashboardHeader extends Component {
   render() {
     return (
       <div className="dashboard__header">
-        <h2>Hai investito</h2>
+        <h2>Your investments</h2>
         <h1>834€</h1>
       </div>
     );

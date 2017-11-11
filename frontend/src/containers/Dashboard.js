@@ -56,7 +56,7 @@ class DashboardContainer extends Component {
             <p className="box__investment-title">
               <img src={fuel} alt="" /> Fuel
             </p>
-            <p className="box__investment-text">Quando spendi in Carburante investi il 5% di quello che ho speso!</p>
+            <p className="box__investment-text">When I buy fuel I want to invest the 10% of what I paid.</p>
             <div className="box__investment-perc-oval">5%</div>
           </div>
           <div className="box__left-arrow-action">
@@ -69,7 +69,9 @@ class DashboardContainer extends Component {
             <p className="box__investment-title">
               <img src={hambuger} alt="" /> Fast food
             </p>
-            <p className="box__investment-text">Quando spendi in Carburante investi il 3% di quello che ho speso!</p>
+            <p className="box__investment-text">
+              When I buy a meal from a fast food I want to invest the 10% of what I paid.
+            </p>
             <div className="box__investment-perc-oval">3%</div>
           </div>
           <div className="box__left-arrow-action">
@@ -82,7 +84,9 @@ class DashboardContainer extends Component {
             <p className="box__investment-title">
               <img src={ecommerce} alt="" /> Ecommerce
             </p>
-            <p className="box__investment-text">Quando spendi in Carburante investi il 10% di quello che ho speso!</p>
+            <p className="box__investment-text">
+              When I buy products from an ecommerce I want to invest the 10% of what I paid.
+            </p>
             <div className="box__investment-perc-oval">10%</div>
           </div>
           <div className="box__left-arrow-action">
@@ -95,7 +99,7 @@ class DashboardContainer extends Component {
             <p className="box__investment-title">
               <img src={plane} style={{ width: '24px' }} alt="" />Transport
             </p>
-            <p className="box__investment-text">Quando spendi in Carburante investi il 7% di quello che ho speso!</p>
+            <p className="box__investment-text">When I travel I want to invest the 7% of what I paid.</p>
             <div className="box__investment-perc-oval">7%</div>
           </div>
           <div className="box__left-arrow-action">

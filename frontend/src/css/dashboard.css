@@ -107,7 +107,8 @@
   font-size: 24px;
   font-weight: 900;
   line-height: 1;
-  color: #268be2; }
+  color: #268be2;
+  margin-bottom: 12px; }
   .box__investment-title img {
     margin-right: 8px; }
 
