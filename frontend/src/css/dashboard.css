@@ -83,7 +83,7 @@
   float: right;
   border-left: solid 1px #e0e0e0; }
   .box__left-arrow-action img {
-    margin-left: 12px; }
+    margin-left: 0; }
 
 .box__investment-content {
   float: left;
