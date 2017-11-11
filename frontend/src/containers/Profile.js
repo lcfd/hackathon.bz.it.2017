@@ -65,6 +65,7 @@ class ProfileContainer extends Component {
     console.log(this.state.totalExpenses);
     const { totalExpenses } = this.state;
     const { totFuel, totEcommerce, totFastFood, totTransport } = totalExpenses;
+    
     return (
       <AppWrapper class="profile container">
         <ProfileHeader userPic={peterDolonPic} user={{ name: 'Peter Dolon' }} />
