@@ -4,6 +4,7 @@ import AppWrapper from '../containers/AppWrapper';
 import { PageHeader } from '../components/PageHeader';
 import { Box } from '../components/Box';
 import { SideMenu } from '../components/SideMenu';
+import { ProfileChart } from '../components/ProfileChart';
 
 import { set_invested_value_3_month } from '../actions/user';
 import { dashboardMonthAggregation } from './utils/dataAggregations';
@@ -57,7 +58,9 @@ class InvestmentsContainer extends Component {
             <p className="box__investment-sected-money-value--small">FUND TREND</p>
             <p className="box__current-gain-success--small">Grow of 1000 (EUR) +16.43 (4.56%)</p>
 
-            <img className="box__investment-graph" src={mockedGraph} alt="" />
+            {/* <img className="box__investment-graph" src={mockedGraph} alt="" /> */}
+            <ProfileChart />
+
           </div>
         </div>
       </AppWrapper>

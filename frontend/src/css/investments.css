@@ -1,6 +1,10 @@
 @media (min-width: 312px) {
   .investments {
     margin-top: 100px; }
+    .investments .box__weekly-stats {
+      margin-bottom: 15px; }
+    .investments .box__weekly-stats-amount {
+      margin-bottom: 12px; }
   .investments__header {
     height: 204px;
     width: 100%;
@@ -76,7 +80,7 @@
     text-align: left;
     color: #aeaeae; } }
 
-@media (min-width: 312px) {
+@media (min-width: 1024px) {
   .investments {
     margin-top: 140px; }
   .box p {
