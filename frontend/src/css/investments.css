@@ -78,12 +78,41 @@
     font-size: 20px;
     font-weight: bold;
     text-align: left;
-    color: #aeaeae; } }
+    color: #aeaeae; }
+  .investments__chart {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 65px; } }
 
 @media (min-width: 1024px) {
   .investments {
     margin-top: 140px; }
   .box p {
     margin-bottom: 15px; }
-  .investments__container-min-height {
-    min-height: 850px; } }
+  .investments__chart {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3; } }
+
+@media (min-width: 1300px) {
+  .investments__chart {
+    height: 600px; } }
+
+@media (min-width: 1600px) {
+  .investments__chart {
+    height: 1000px; } }
+
+@media (min-width: 1920px) {
+  .investments__chart {
+    height: 1056px; } }
+
+@media (min-width: 2000px) {
+  .investments__chart {
+    height: 1000px; } }
+
+@media (min-width: 2500px) {
+  .investments__chart {
+    height: 1300px; } }

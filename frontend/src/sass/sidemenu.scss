@@ -2,6 +2,9 @@
   .sidemenu {
     display: none;
   }
+  .sidemenu__hi {
+    color: #fff;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -13,6 +16,10 @@
   .sidemenu__hi {
     line-height: 45px;
     white-space: nowrap;
+  }
+
+  .sidemenu__menu-title {
+    margin-top: 50px;
   }
 
   .sidemenu__menu-list {

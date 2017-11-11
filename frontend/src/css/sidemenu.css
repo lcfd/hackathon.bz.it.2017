@@ -1,6 +1,8 @@
 @media (min-width: 312px) {
   .sidemenu {
-    display: none; } }
+    display: none; }
+  .sidemenu__hi {
+    color: #fff; } }
 
 @media (min-width: 1024px) {
   .sidemenu {
@@ -10,6 +12,8 @@
   .sidemenu__hi {
     line-height: 45px;
     white-space: nowrap; }
+  .sidemenu__menu-title {
+    margin-top: 50px; }
   .sidemenu__menu-list {
     list-style: none;
     padding-left: 0;

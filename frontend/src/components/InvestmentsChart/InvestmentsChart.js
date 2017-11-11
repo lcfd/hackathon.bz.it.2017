@@ -69,8 +69,8 @@ class InvestmentsChart extends Component {
 
   render() {
     return (
-      <div className="profile__chart">
-        <canvas id="myChart" width="100%" height="30px" />
+      <div className="investments__chart">
+        <canvas id="myChart" width="100%" height="55px" />
       </div>
     );
   }

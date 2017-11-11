@@ -24,8 +24,7 @@ class SideMenu extends Component {
             <div className="col-1 hidden-md-up" />
 
             <div className="col-12 ">
-              <br />
-              <p>MENU</p>
+              <p className="sidemenu__menu-title">MENU</p>
             </div>
             <div className="col-12 ">
               <ul className="sidemenu__menu-list">
