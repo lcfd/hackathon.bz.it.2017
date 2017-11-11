@@ -41,17 +41,21 @@
   }
   .centered {
     margin: 0 auto;
-    border-radius: 2px;
-    background-color: $dark-sky-blue-two;
-    padding: 10px;
     text-align: center;
-    color: $white-three;
   }
   .right {
     text-align: right;
   }
   .left {
     text-align: left;
+  }
+  .selected {
+    span {
+      border-radius: 2px;
+      background-color: $dark-sky-blue-two;
+      padding: 10px;
+      color: $white-three;
+    }
   }
 }
 
@@ -71,5 +75,4 @@
 }
 
 .profile__chart {
-  
 }

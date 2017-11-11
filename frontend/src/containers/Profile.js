@@ -27,7 +27,8 @@ class ProfileContainer extends Component {
         totFastFood: 0,
         totFuel: 0,
         totTransport: 0
-      }
+      },
+      monthSelected: 1
     };
   }
 
@@ -62,6 +63,10 @@ class ProfileContainer extends Component {
     });
   }
 
+  handleSelectCurrentMonth = id => {
+    this.setState({ monthSelected: id });
+  };
+
   render() {
     console.log(this.state.totalExpenses);
 
@@ -74,11 +79,30 @@ class ProfileContainer extends Component {
           </div>
           <div className="col-12 col-sm-12 col-md-12 col-lg-9 investments__container-min-height">
             <div className="row profile__month-select">
-              <div className="col-4 right">JUL 2017</div>
-              <div className="col-4">
-                <span className="centered">AUG 2017</span>
+              <div
+                className={`col-4 right ${this.state.monthSelected === 0 ? 'selected' : ''}`}
+                onClick={e => {
+                  this.handleSelectCurrentMonth(0);
+                }}
+              >
+                <span>JUL 2017</span>
               </div>
-              <div className="col-4 left">SEPT 2017</div>
+              <div
+                className={`col-4 ${this.state.monthSelected === 1 ? 'selected' : ''}`}
+                onClick={e => {
+                  this.handleSelectCurrentMonth(1);
+                }}
+              >
+                <span className="centered ">AUG 2017</span>
+              </div>
+              <div
+                className={`col-4 left ${this.state.monthSelected === 2 ? 'selected' : ''}`}
+                onClick={e => {
+                  this.handleSelectCurrentMonth(2);
+                }}
+              >
+                <span>SEPT 2017</span>
+              </div>
             </div>
             <p className="profile__centered-title">TOTAL EXPENSES</p>
             <p className="profile__centered-money">€ {this.state.totalExpenses.finalSum}</p>
