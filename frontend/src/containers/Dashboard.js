@@ -72,18 +72,18 @@ class DashboardContainer extends Component {
         <PageHeader class="dashboard__header" main="Your investments" sub="834€" />
         <Box>
           <img className="dashboard__box-salvadanaio-img" src={salvadanaio} alt="" />
-          <p className="box__weekly-stats">WEEKLY STATS</p>
+          <p className="box__weekly-stats">MONTHLY STATS</p>
           <p className="box__weekly-stats-amount">
             € <strong>40,00</strong>
           </p>
-          <p className="box__investment-this-week">Investment this week</p>
+          <p className="box__investment-this-week">Investment this month</p>
           <hr style={{ marginBottom: 0 }} />
           <div className="row">
             <div className="col-6">
               <p className="box__text-number-in-split">
                 € <strong>40,00</strong>
               </p>
-              <p className="box__text-under-number">Weekly average</p>
+              <p className="box__text-under-number">Monthly average</p>
               <div className="box__weekly-vertical-line" />
             </div>
 
