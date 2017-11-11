@@ -29,33 +29,49 @@
   right: 0;
   top: 0; }
 
-.box__current-gain-success {
+.box__current-gain-success, .box__current-gain-success--small {
   font-size: 20px;
   font-weight: bold;
   color: #0fb514;
-  padding: 0 16px; }
-
-.box {
-  border-radius: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 0 16px;
   position: relative;
-  z-index: 2;
-  margin-bottom: 24px; }
+  z-index: 2; }
+
+.box__current-gain-success--small {
+  font-size: 12px; }
 
 .box__investment-this-week {
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #268be2;
+  padding: 0 16px;
+  margin-bottom: 15px; }
+
+.box__sell-button {
+  text-align: center;
+  color: #3996e5;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  padding: 15px 0;
+  border-top: solid 1px #e0e0e0;
+  margin-top: 15px; }
+
+.box__investment-this-week {
+  font-size: 12px;
   font-weight: bold;
   color: #268be2;
   padding: 0 16px; }
 
-.box__weekly-stats-amount {
-  padding: 0 16px;
-  font-size: 30px;
-  color: #585858; }
-  .box__weekly-stats-amount strong {
-    font-size: 40px; }
+.box__investment-sected-money-value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #585858;
+  margin-bottom: 5px;
+  padding: 0 16px; }
 
-.box__sell-button {
-  text-align: center;
-  color: #3996e5; }
+.box__investment-graph {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 42px; }

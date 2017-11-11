@@ -12,6 +12,7 @@ import '../css/investments.css';
  * assets
  */
 import investmentsMainIcon from '../assets/img/investmentsMainIcon.svg';
+import mockedGraph from '../assets/img/mockedGraph.png';
 
 class InvestmentsContainer extends Component {
   render() {
@@ -25,9 +26,15 @@ class InvestmentsContainer extends Component {
             € <strong>937</strong>
           </p>
           <p className="box__current-gain-success">+16.43(4.56%)</p>
-          <hr />
-          <a className="box__sell-button" onClick={() => alert('SELL MAAAAAN')}>SELL</a>
+          <p className="box__sell-button" onClick={() => alert('SELL MAAAAAN')}>
+            SELL
+          </p>
         </Box>
+        {/* <p className="box__investment-this-week">TREND CHART</p> */}
+        <p className="box__investment-sected-money-value">€ 648.53</p>
+        <p className="box__current-gain-success--small">+8.23€ (2.26%) this week</p>
+
+        <img className="box__investment-graph" src={mockedGraph} alt="" />
       </AppWrapper>
     );
   }
