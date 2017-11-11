@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import _ from 'lodash';
 import { connect } from 'react-redux';
 
 import { dashboardMonthAggregation } from './utils/dataAggregations';
@@ -23,7 +22,6 @@ import '../css/dashboard.css';
  * assets
  */
 import salvadanaio from '../assets/img/salvadanaio.svg';
-import arrowRight from '../assets/img/arrow-right.svg';
 import edit from '../assets/img/edit.svg';
 import close from '../assets/img/close.svg';
 import fuel from '../assets/img/fuel.svg';
@@ -86,7 +84,7 @@ class DashboardContainer extends Component {
   render() {
     return (
       <AppWrapper class="dashboard container">
-        <PageHeader class="dashboard__header" main="Your investments" sub="834€" />
+        <PageHeader class="dashboard__header" main="Your investments" sub="247€" />
         <Box>
           <img className="dashboard__box-salvadanaio-img" src={salvadanaio} alt="" />
           <p className="box__weekly-stats">MONTHLY STATS</p>
