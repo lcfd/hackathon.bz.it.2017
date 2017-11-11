@@ -4,6 +4,7 @@ import AppWrapper from '../containers/AppWrapper';
 import { ProfileHeader } from '../components/ProfileHeader';
 
 import { dashboardMonthAggregationNoPerc } from './utils/dataAggregations';
+import { SideMenu } from '../components/SideMenu';
 
 /**
  * css
@@ -66,16 +67,23 @@ class ProfileContainer extends Component {
     return (
       <AppWrapper class="profile container">
         <ProfileHeader userPic={peterDolonPic} user={{ name: 'Peter Dolon' }} />
-        <div className="row profile__month-select">
-          <div className="col-4 right">JUL 2017</div>
-          <div className="col-4">
-            <span className="centered">AUG 2017</span>
+        <div className="row">
+          <div className="col-12 col-sm-12 col-md-3 col-lg-3 hidden-sm-down">
+            <SideMenu />
           </div>
-          <div className="col-4 left">SEPT 2017</div>
+          <div className="col-12 col-sm-12 col-md-12 col-lg-9 investments__container-min-height">
+            <div className="row profile__month-select">
+              <div className="col-4 right">JUL 2017</div>
+              <div className="col-4">
+                <span className="centered">AUG 2017</span>
+              </div>
+              <div className="col-4 left">SEPT 2017</div>
+            </div>
+            <p className="profile__centered-title">TOTAL EXPENSES</p>
+            <p className="profile__centered-money">€ {this.state.totalExpenses.finalSum}</p>
+            <img className="profile__cake-chart" src={totalCake} alt="" />
+          </div>
         </div>
-        <p className="profile__centered-title">TOTAL EXPENSES</p>
-        <p className="profile__centered-money">€ {this.state.totalExpenses.finalSum}</p>
-        <img className="profile__cake-chart" src={totalCake} alt="" />
       </AppWrapper>
     );
   }
