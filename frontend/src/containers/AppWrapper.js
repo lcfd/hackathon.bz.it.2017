@@ -33,7 +33,7 @@ class AppWrapper extends Component {
               <p>
                 <img src={profile} alt="" />
               </p>
-              <p>Investments</p>
+              <p>Profile</p>
             </Link>
           </div>
         </BottomMainMenu>
