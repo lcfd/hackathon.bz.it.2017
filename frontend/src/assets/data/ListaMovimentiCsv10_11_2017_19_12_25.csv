@@ -1,0 +1,14 @@
+﻿DATA;VALUTA;DARE;AVERE;;DESCRIZIONE OPERAZIONE;CAUSALE ABI;
+06/11/2017;06/11/2017;6,45;;EUR;Pagamenti diversi                  CRED. PayPal Europe S.a.r.l. et Cie RIF. 1001948497047 PAYPAL SDD 2017 R 1228328 SCAD. 06/11/2017 IMP. E        6,45                                                           ;50;
+06/11/2017;04/11/2017;51,75;;EUR;Prelevamento a mezzo ATM altri     IMP. E     50,00 COMM.  E 1,75 DATA/ORA OP.: 04/11/2017 22.45.00 BANCA: BANCA DI PISA E FORNACETTE C REDITO COOPERATIVO SCPA TESSERA NR.: 00980921                             ;91;
+06/11/2017;04/11/2017;1,50;;EUR;Pagamento tramite POS              DEL 04/11/2017 17.31 PRESSO ACQUARIO DI LIVORNO TESSERA NR.: 00980921                                                                                                          ;43;
+06/11/2017;06/11/2017;530,00;;EUR;Vostra disposizione a favore      Coordinate benef: IT57F0830401806000006325418                                                              A fav: ANDREA FRISON - TRENTO                                        ;26;
+06/11/2017;06/11/2017;;1,00;EUR;Bonifico da estero  ( data ordine  06112017, ordinante SATISPAY LIMITED)  Indirizzo ordinante  3 WATERHOUSE SQUARE,138 HOLBORN, LONDON, EC1N 2SW, IBAN ordinante  GB88SATY00998100;ZI;
+07/11/2017;01/11/2017;15,60;;EUR;Pagamento tramite POS              DATA/ORA OPER.: 01/11/2017 21.55.00 ESERC.: MC DONALDS         590 V.DI MADONNA B TRENTO                                                                                       ;43;
+09/11/2017;09/11/2017;;1.406,00;EUR;Ordinante: BELKA SRL Causale: Bonifico a Vs favore Data ordine: 08/11/2017 IBAN ordinante: IT94F08120018020 Indirizzo ordinante: VIA ROBERTO DA SANSEVERINO 95 - TRENTO;48;
+09/11/2017;04/11/2017;5,00;;EUR;Pagamento tramite POS              DATA/ORA OPER.: 04/11/2017 22.26.00 ESERC.: PIZZERIA LA FORMICA SR VIA ROMANA 70 MONTECARLO                                                                                    ;43;
+10/11/2017;09/11/2017;38,24;;EUR;Pagamento tramite POS             DEL 09-11-2017 16.00               PRESSO SUPERMERCATO SUPERSTORE                                                                                                               ;43;
+10/11/2017;09/11/2017;12,30;;EUR;Pagamento tramite POS             DEL 09-11-2017 20.44               PRESSO DISTRIBUTORE AGIP           TESSERA NR.  00980921                                                                                     ;43;
+10/11/2017;;;1.702,59;EUR;Saldo contabile;
+10/11/2017;;;1.702,59;EUR;Saldo liquido;
+10/11/2017;;;1.702,59;EUR;Saldo disponibile al

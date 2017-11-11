@@ -1,0 +1,75 @@
+@import './colors.scss';
+@import url('https://rsms.me/inter/inter-ui.css');
+
+body {
+  height: 100%;
+  margin-bottom: 100px;
+  font-family: 'Inter UI', sans-serif;
+  color: $greyish-brown;
+}
+.global {
+  // background-color: red;
+}
+
+.clear {
+  clear: both;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  .hidden-md-up {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hidden-sm-up {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hidden-sm-down {
+    display: none;
+  }
+}
+
+input[type='range'] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+  height: 6px;
+  background-color: $pinkish-grey;
+  margin-top: 30px;
+}
+
+/* Special styling for WebKit/Blink */
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: $dark-sky-blue-two;
+  cursor: pointer;
+}
+
+/* All the same stuff for Firefox */
+input[type='range']::-moz-range-thumb {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: $dark-sky-blue-two;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type='range']::-ms-thumb {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: $dark-sky-blue-two;
+  cursor: pointer;
+}

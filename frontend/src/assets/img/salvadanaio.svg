@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="102" viewBox="0 0 78 102">
+    <defs>
+        <linearGradient id="a" x1="0%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#008FFC"/>
+            <stop offset="100%" stop-color="#1ADBC9"/>
+        </linearGradient>
+        <filter id="b" width="108.7%" height="114.7%" x="-4.4%" y="-5.4%" filterUnits="objectBoundingBox">
+            <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter2"/>
+            <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation="1.5"/>
+            <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.226987 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <rect id="c" width="343" height="204" rx="8"/>
+        <linearGradient id="d" x1="0%" x2="84.132%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#008FFC"/>
+            <stop offset="100%" stop-color="#1ADBC9"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" d="M0 0h375v204H0z" transform="translate(-281 -139)"/>
+        <g filter="url(#b)" transform="translate(-265)">
+            <mask id="e" fill="#fff">
+                <use xlink:href="#c"/>
+            </mask>
+            <use fill="#FFF" xlink:href="#c"/>
+            <path fill="url(#d)" fill-rule="nonzero" d="M329.407-12.285s-.014 27.965-12.328 34.07c9.656 1.547 29.735 7.973 29.735 34.751V76.68s5.222 5.213 5.222 18.464h-80.074c0-13.251 5.222-18.464 5.222-18.464V56.536c0-26.404 19.53-33.027 29.335-34.692-11.92-5.26-11.926-27.415-11.926-27.415H312v-6.714h17.407zm0-6.714H312c-3.849 0-6.963 3.003-6.963 6.714h-10.444a7.09 7.09 0 0 0-4.923 1.967 6.601 6.601 0 0 0-2.04 4.747c0 1.928.23 14.628 5.97 24.254-3.366 1.475-6.814 3.468-10.016 6.176-8.867 7.502-13.362 18.156-13.362 31.677v17.992C268.08 77.82 265 84.416 265 95.143c0 3.711 3.114 6.714 6.963 6.714h80.074c3.849 0 6.963-3.003 6.963-6.714 0-10.727-3.08-17.323-5.222-20.615V56.536c0-18.203-8.82-31.834-24.118-38.201 6.283-11.042 6.711-26.686 6.711-30.62a6.59 6.59 0 0 0-2.04-4.748A7.09 7.09 0 0 0 329.408-19zm-3.57 87.39c0 5.586-4.487 9.264-11.124 10.018v7.102h-4.596v-7.05c-5.012-.4-9.663-2.517-13.002-5.487l2.666-5.134c3.76 3.324 8.459 5.134 12.375 5.134 4.284 0 6.84-1.56 6.84-4.282 0-7.855-19.74-3.475-19.74-16.012 0-5.39 4.285-8.963 10.86-9.671v-6.597l4.597-.046v6.597c3.97.354 7.779 1.659 10.655 3.527l-2.557 5.24c-3.97-2.315-7.935-3.272-10.703-3.272-3.603 0-5.956 1.31-5.956 3.678 0 7.691 19.74 3.56 19.686 16.255z" mask="url(#e)"/>
+        </g>
+    </g>
+</svg>

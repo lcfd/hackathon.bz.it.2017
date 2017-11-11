@@ -1,0 +1,58 @@
+.profile {
+  margin-top: 110px; }
+
+.profile__header {
+  height: 100px;
+  border-bottom: solid 1px #e0e0e0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  line-height: 100px;
+  font-size: 24px;
+  background-color: #ffffff; }
+  .profile__header strong {
+    font-weight: 900;
+    color: #268be2; }
+
+.profile__header-user-pic {
+  width: 100%; }
+
+.profile__cake-chart {
+  width: 90%;
+  display: table;
+  margin: 0 auto; }
+
+.profile__month-select {
+  font-size: 12px;
+  font-weight: 600; }
+  .profile__month-select div {
+    height: 45px;
+    line-height: 45px;
+    text-align: center; }
+  .profile__month-select .centered {
+    margin: 0 auto;
+    text-align: center; }
+  .profile__month-select .right {
+    text-align: right; }
+  .profile__month-select .left {
+    text-align: left; }
+  .profile__month-select .selected span {
+    border-radius: 2px;
+    background-color: #268be2;
+    padding: 10px;
+    color: #ffffff; }
+
+.profile__centered-title {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #268be2;
+  line-height: 40px; }
+
+.profile__centered-money {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px; }
