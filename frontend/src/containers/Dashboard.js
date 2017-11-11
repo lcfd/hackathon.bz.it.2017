@@ -5,6 +5,7 @@ import { dashboardMonthAggregation } from './utils/dataAggregations';
 import AppWrapper from '../containers/AppWrapper';
 import { PageHeader } from '../components/PageHeader';
 import { Box } from '../components/Box';
+import { SideMenu } from '../components/SideMenu';
 
 import {
   set_percentage_ecommerce,
@@ -108,7 +109,9 @@ class DashboardContainer extends Component {
           sub={`${(parseInt(this.props.user.investedValue3Month) * 1.42).toFixed(0)}€`}
         />
         <div className="row">
-          <div className="col-12 col-md-3">askdjflakjsdflksjdflajksdf</div>
+          <div className="col-12 col-md-3">
+            <SideMenu />
+          </div>
           <div className="col-12 col-md-9">
             <Box>
               <img className="dashboard__box-salvadanaio-img" src={salvadanaio} alt="" />

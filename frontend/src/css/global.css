@@ -11,6 +11,10 @@ body {
 p {
   margin-bottom: 0; }
 
+@media (min-width: 1024px) {
+  .hidden-md-up {
+    display: none; } }
+
 input[type='range'] {
   -webkit-appearance: none;
   /* Hides the slider so that custom slider can be made */
