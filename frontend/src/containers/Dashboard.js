@@ -68,8 +68,10 @@ class DashboardContainer extends Component {
       let aggregationPastPastMonth = dashboardMonthAggregation(this.props, 4);
       let monthlyAverage = parseInt(aggregation) + parseInt(aggregationPastMonth) + parseInt(aggregationPastPastMonth);
       this.props.set_invested_value_3_month(monthlyAverage);
-      monthlyAverage = monthlyAverage / 3;
-      this.setState({ aggregation, aggregationPastMonth, aggregationPastPastMonth, monthlyAverage });
+      this.setState({
+        aggregation,
+        aggregationPastPastMonth
+      });
     }
   }
 
