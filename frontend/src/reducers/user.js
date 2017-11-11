@@ -2,7 +2,8 @@ import {
   SET_PERCENTAGE_ECOMMERCE,
   SET_PERCENTAGE_FASTFOOD,
   SET_PERCENTAGE_FUEL,
-  SET_PERCENTAGE_TRANSPORT
+  SET_PERCENTAGE_TRANSPORT,
+  SET_INVESTED_VALUE_3_MONTH
 } from '../actions/user';
 
 const initialState = {
@@ -10,7 +11,8 @@ const initialState = {
   fuelPercentage: 5,
   fastFoodPercentage: 10,
   ecommercePercentage: 3,
-  transportPercentage: 7
+  transportPercentage: 7,
+  investedValue3Month: 0
 };
 export function user(state = initialState, action) {
   switch (action.type) {
@@ -33,6 +35,11 @@ export function user(state = initialState, action) {
       return {
         ...state,
         transportPercentage: action.payload
+      };
+    case SET_INVESTED_VALUE_3_MONTH:
+      return {
+        ...state,
+        investedValue3Month: action.payload
       };
     default:
       return state;

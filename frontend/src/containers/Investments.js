@@ -4,6 +4,9 @@ import AppWrapper from '../containers/AppWrapper';
 import { PageHeader } from '../components/PageHeader';
 import { Box } from '../components/Box';
 
+import { set_invested_value_3_month } from '../actions/user';
+import { dashboardMonthAggregation } from './utils/dataAggregations';
+
 /**
  * css
  */
@@ -15,6 +18,16 @@ import investmentsMainIcon from '../assets/img/investmentsMainIcon.svg';
 import mockedGraph from '../assets/img/mockedGraph.png';
 
 class InvestmentsContainer extends Component {
+  componentDidMount() {
+    if (!this.props.user.investedValue3Month) {
+      let aggregation = dashboardMonthAggregation(this.props, 2);
+      let aggregationPastMonth = dashboardMonthAggregation(this.props, 3);
+      let aggregationPastPastMonth = dashboardMonthAggregation(this.props, 4);
+      let monthlyAverage = parseInt(aggregation) + parseInt(aggregationPastMonth) + parseInt(aggregationPastPastMonth);
+      this.props.set_invested_value_3_month(monthlyAverage);
+    }
+  }
+
   render() {
     return (
       <AppWrapper class="investments container">
@@ -26,7 +39,7 @@ class InvestmentsContainer extends Component {
             € <strong>834</strong>
           </p>
           {/* <p className="box__current-gain-success">+16.43(4.56%)</p> */}
-          <p className="box__current-gain-gray">Invested value €631</p>
+          <p className="box__current-gain-gray">Invested value €{this.props.user.investedValue3Month}</p>
           <p className="box__sell-button" onClick={() => alert('SELL MAAAAAN')}>
             SELL
           </p>
@@ -43,7 +56,9 @@ class InvestmentsContainer extends Component {
 }
 
 const mapStateToProps = state => {
-  return {};
+  return {
+    user: state.user
+  };
 };
 
-export default connect(mapStateToProps, {})(InvestmentsContainer);
+export default connect(mapStateToProps, { set_invested_value_3_month })(InvestmentsContainer);

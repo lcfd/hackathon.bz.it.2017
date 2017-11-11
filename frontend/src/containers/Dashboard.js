@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import _ from 'lodash';
 import { connect } from 'react-redux';
 
+import { dashboardMonthAggregation } from './utils/dataAggregations';
 import AppWrapper from '../containers/AppWrapper';
 import { PageHeader } from '../components/PageHeader';
 import { Box } from '../components/Box';
@@ -9,7 +11,8 @@ import {
   set_percentage_ecommerce,
   set_percentage_fastfood,
   set_percentage_fuel,
-  set_percentage_transport
+  set_percentage_transport,
+  set_invested_value_3_month
 } from '../actions/user';
 
 /**
@@ -35,8 +38,22 @@ class DashboardContainer extends Component {
       fuelIsFlipped: false,
       fastFoodIsFlipped: false,
       ecommerceIsFlipped: false,
-      transportIsFlipped: false
+      transportIsFlipped: false,
+      aggregation: 0,
+      aggregationPastMonth: 0,
+      aggregationPastPastMonth: 0,
+      monthlyAverage: 0
     };
+  }
+
+  componentDidMount() {
+    let aggregation = dashboardMonthAggregation(this.props, 2);
+    let aggregationPastMonth = dashboardMonthAggregation(this.props, 3);
+    let aggregationPastPastMonth = dashboardMonthAggregation(this.props, 4);
+    let monthlyAverage = parseInt(aggregation) + parseInt(aggregationPastMonth) + parseInt(aggregationPastPastMonth);
+    this.props.set_invested_value_3_month(monthlyAverage);
+    monthlyAverage = monthlyAverage / 3;
+    this.setState({ aggregation, aggregationPastMonth, aggregationPastPastMonth, monthlyAverage });
   }
 
   handleClickSetting = e => {
@@ -74,14 +91,14 @@ class DashboardContainer extends Component {
           <img className="dashboard__box-salvadanaio-img" src={salvadanaio} alt="" />
           <p className="box__weekly-stats">MONTHLY STATS</p>
           <p className="box__weekly-stats-amount">
-            € <strong>40,00</strong>
+            € <strong>{this.state.aggregation}</strong>
           </p>
           <p className="box__investment-this-week">Investment this month</p>
           <hr style={{ marginBottom: 0 }} />
           <div className="row">
             <div className="col-6">
               <p className="box__text-number-in-split">
-                € <strong>40,00</strong>
+                € <strong>{this.state.aggregationPastMonth}</strong>
               </p>
               <p className="box__text-under-number">Previous month</p>
               <div className="box__weekly-vertical-line" />
@@ -89,7 +106,7 @@ class DashboardContainer extends Component {
 
             <div className="col-6">
               <p className="box__text-number-in-split">
-                € <strong>40,00</strong>
+                € <strong>{this.state.monthlyAverage}</strong>
               </p>
               <p className="box__text-under-number">Monthly average</p>
             </div>
@@ -265,5 +282,6 @@ export default connect(mapStateToProps, {
   set_percentage_ecommerce,
   set_percentage_fastfood,
   set_percentage_fuel,
-  set_percentage_transport
+  set_percentage_transport,
+  set_invested_value_3_month
 })(DashboardContainer);
