@@ -7,7 +7,7 @@ import {
 } from '../actions/user';
 
 const initialState = {
-  fullName: 'Marco Costa',
+  fullName: 'Peter Dolon',
   fuelPercentage: 5,
   fastFoodPercentage: 10,
   ecommercePercentage: 3,
