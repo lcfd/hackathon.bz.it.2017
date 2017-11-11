@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Chart } from 'chart.js';
 
-class ProfileChart extends Component {
+class InvestmentsChart extends Component {
   componentWillUpdate(nextProps, nextState) {
     let draw = Chart.controllers.line.prototype.draw;
     Chart.controllers.line = Chart.controllers.line.extend({
@@ -76,4 +76,4 @@ class ProfileChart extends Component {
   }
 }
 
-export default ProfileChart;
+export default InvestmentsChart;
