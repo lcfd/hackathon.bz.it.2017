@@ -34,7 +34,7 @@ class InvestmentsContainer extends Component {
         <PageHeader class="investments__header" main="Your investment" />
         <Box>
           <img className="investments__box-main-img" src={investmentsMainIcon} alt="" />
-          <p className="box__weekly-stats">YOUR INVESTMENT VALUE</p>
+          <p className="box__weekly-stats">CURRENT INVESTMENT VALUE</p>
           <p className="box__weekly-stats-amount">
             € <strong>834</strong>
           </p>
