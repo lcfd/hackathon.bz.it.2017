@@ -2,7 +2,8 @@
 body {
   height: 100%;
   margin-bottom: 100px;
-  font-family: 'Inter UI', sans-serif; }
+  font-family: 'Inter UI', sans-serif;
+  color: #585858; }
 
 .clear {
   clear: both; }
