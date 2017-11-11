@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import AppWrapper from '../containers/AppWrapper';
-import { DashboardHeader } from '../components/DashboardHeader';
+import { PageHeader } from '../components/PageHeader';
 import { Box } from '../components/Box';
 
 /**
@@ -23,7 +23,7 @@ class DashboardContainer extends Component {
   render() {
     return (
       <AppWrapper class="dashboard container">
-        <DashboardHeader />
+        <PageHeader class="dashboard__header" main="Your investments" sub="834€" />
         <Box>
           <img className="dashboard__box-salvadanaio-img" src={salvadanaio} alt="" />
           <p className="box__weekly-stats">WEEKLY STATS</p>
