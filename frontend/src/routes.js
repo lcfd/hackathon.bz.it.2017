@@ -10,18 +10,16 @@ import DashboardContainer from './containers/Dashboard';
 import SetPercContainer from './containers/SetPerc';
 import ProfileContainer from './containers/Profile';
 import InvestmentsContainer from './containers/Investments';
-import StatsContainer from './containers/Stats';
 
 class Routes extends Component {
   render() {
     return (
       <Router>
         <Switch>
-          <Route exact path="/" component={DashboardContainer} />
           <Route path="/setPerc" component={SetPercContainer} />
           <Route path="/profile" component={ProfileContainer} />
           <Route path="/investments" component={InvestmentsContainer} />
-          <Route path="/stats" component={StatsContainer} />
+          <Route exact path="/" component={DashboardContainer} />
         </Switch>
       </Router>
     );

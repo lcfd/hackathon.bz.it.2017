@@ -50,7 +50,7 @@ class InvestmentsContainer extends Component {
                 <p className="box__current-gain-gray">
                   Invested value €{parseInt(this.props.user.investedValue3Month).toFixed(2)}
                 </p>
-                <p className="box__sell-button" onClick={() => alert('SELL MAAAAAN')}>
+                <p className="box__sell-button" onClick={() => alert('SELL SELL SELL!')}>
                   SELL
                 </p>
               </Box>
