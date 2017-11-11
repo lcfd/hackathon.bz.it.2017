@@ -18,3 +18,40 @@ body {
 p {
   margin-bottom: 0;
 }
+
+input[type='range'] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+  height: 4px;
+  background-color: $pinkish-grey;
+  margin-top: 30px;
+}
+
+/* Special styling for WebKit/Blink */
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: $dark-sky-blue-two;
+  cursor: pointer;
+}
+
+/* All the same stuff for Firefox */
+input[type='range']::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: $dark-sky-blue-two;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type='range']::-ms-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: $dark-sky-blue-two;
+  cursor: pointer;
+}
