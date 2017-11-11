@@ -5,6 +5,7 @@ import { ProfileHeader } from '../components/ProfileHeader';
 
 import { dashboardMonthAggregationNoPerc } from './utils/dataAggregations';
 import { SideMenu } from '../components/SideMenu';
+import { ProfileChart } from '../components/ProfileChart';
 
 /**
  * css
@@ -81,7 +82,7 @@ class ProfileContainer extends Component {
             </div>
             <p className="profile__centered-title">TOTAL EXPENSES</p>
             <p className="profile__centered-money">€ {this.state.totalExpenses.finalSum}</p>
-            <img className="profile__cake-chart" src={totalCake} alt="" />
+            <ProfileChart />
           </div>
         </div>
       </AppWrapper>
