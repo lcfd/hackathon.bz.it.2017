@@ -15,6 +15,14 @@ p {
   .hidden-md-up {
     display: none; } }
 
+@media (min-width: 768px) {
+  .hidden-sm-up {
+    display: none; } }
+
+@media (max-width: 1024px) {
+  .hidden-sm-down {
+    display: none; } }
+
 input[type='range'] {
   -webkit-appearance: none;
   /* Hides the slider so that custom slider can be made */

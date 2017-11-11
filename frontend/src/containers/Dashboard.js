@@ -109,10 +109,10 @@ class DashboardContainer extends Component {
           sub={`${(parseInt(this.props.user.investedValue3Month) * 1.42).toFixed(0)}€`}
         />
         <div className="row">
-          <div className="col-12 col-sm-12 col-md-3">
+          <div className="col-12 col-sm-12 col-md-3 col-lg-3 hidden-sm-down">
             <SideMenu />
           </div>
-          <div className="col-12 col-sm-12 col-md-9">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-9">
             <Box>
               <img className="dashboard__box-salvadanaio-img" src={salvadanaio} alt="" />
               <p className="box__weekly-stats">MONTHLY STATS</p>

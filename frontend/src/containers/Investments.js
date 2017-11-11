@@ -34,10 +34,10 @@ class InvestmentsContainer extends Component {
       <AppWrapper class="investments container">
         <PageHeader class="investments__header" main="Your investment" />
         <div className="row">
-          <div className="col-12 col-sm-12 col-md-3">
+          <div className="col-12 col-sm-12 col-md-3 col-lg-3 hidden-sm-down">
             <SideMenu />
           </div>
-          <div className="col-12 col-sm-12 col-md-9 investments__container-min-height">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-9 investments__container-min-height">
             <Box>
               <img className="investments__box-main-img" src={investmentsMainIcon} alt="" />
               <p className="box__weekly-stats">CURRENT INVESTMENT VALUE</p>
