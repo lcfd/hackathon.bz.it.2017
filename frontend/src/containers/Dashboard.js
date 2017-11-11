@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { success } from 'react-notification-system-redux';
 
 import { dashboardMonthAggregation } from './utils/dataAggregations';
 import AppWrapper from '../containers/AppWrapper';
@@ -29,6 +30,13 @@ import fuel from '../assets/img/fuel.svg';
 import hambuger from '../assets/img/hamburger.svg';
 import plane from '../assets/img/plane.svg';
 import ecommerce from '../assets/img/ecommerce.svg';
+
+const notificationOpts = {
+  title: 'Amazon',
+  message: 'Your purchase on amazon has been registered',
+  position: 'tr',
+  autoDismiss: 2
+};
 
 class DashboardContainer extends Component {
   constructor(props) {
@@ -102,6 +110,10 @@ class DashboardContainer extends Component {
     }
   };
 
+  handleNotificationClick() {
+    this.props.success(notificationOpts);
+  }
+
   render() {
     return (
       <AppWrapper class="dashboard container">
@@ -116,7 +128,12 @@ class DashboardContainer extends Component {
           </div>
           <div className="col-12 col-sm-12 col-md-12 col-lg-9">
             <Box>
-              <img className="dashboard__box-salvadanaio-img" src={salvadanaio} alt="" />
+              <img
+                className="dashboard__box-salvadanaio-img"
+                src={salvadanaio}
+                alt=""
+                onClick={() => this.handleNotificationClick()}
+              />
               <p className="box__weekly-stats">MONTHLY STATS</p>
               <p className="box__weekly-stats-amount">
                 € <strong>{parseInt(this.state.aggregation).toFixed(2)}</strong>
@@ -286,7 +303,9 @@ class DashboardContainer extends Component {
                     <p className="box__investment-title">
                       <img src={plane} style={{ width: '24px' }} alt="" />Transport
                     </p>
-                    <p className="box__investment-text">When I travel I want to invest the {this.props.user.transportPercentage}% of what I paid.</p>
+                    <p className="box__investment-text">
+                      When I travel I want to invest the {this.props.user.transportPercentage}% of what I paid.
+                    </p>
                     <div className="box__investment-perc-oval">{this.props.user.transportPercentage}%</div>
                   </div>
                   <div
@@ -341,5 +360,6 @@ export default connect(mapStateToProps, {
   set_percentage_fastfood,
   set_percentage_fuel,
   set_percentage_transport,
-  set_invested_value_3_month
+  set_invested_value_3_month,
+  success
 })(DashboardContainer);
