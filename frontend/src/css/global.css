@@ -30,31 +30,31 @@ input[type='range'] {
   /* Specific width is required for Firefox. */
   background: transparent;
   /* Otherwise white in Chrome */
-  height: 4px;
+  height: 6px;
   background-color: #cccccc;
   margin-top: 30px; }
 
 /* Special styling for WebKit/Blink */
 input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
-  height: 16px;
-  width: 16px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   background: #268be2;
   cursor: pointer; }
 
 /* All the same stuff for Firefox */
 input[type='range']::-moz-range-thumb {
-  height: 16px;
-  width: 16px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   background: #268be2;
   cursor: pointer; }
 
 /* All the same stuff for IE */
 input[type='range']::-ms-thumb {
-  height: 16px;
-  width: 16px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   background: #268be2;
   cursor: pointer; }
