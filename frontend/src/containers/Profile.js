@@ -25,6 +25,8 @@ class ProfileContainer extends Component {
           </div>
           <div className="col-4 left">NOV 2017</div>
         </div>
+        <p className="profile__centered-title">TOTAL EXPENSES</p>
+        <p className="profile__centered-money">€ 500.00</p>
         <img className="profile__cake-chart" src={totalCake} alt="" />
       </AppWrapper>
     );

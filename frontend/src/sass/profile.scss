@@ -1,7 +1,7 @@
 @import './colors.scss';
 
 .profile {
-  margin-top: 120px;
+  margin-top: 110px;
 }
 
 .profile__header {
@@ -53,4 +53,19 @@
   .left {
     text-align: left;
   }
+}
+
+.profile__centered-title {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: $dark-sky-blue-two;
+  line-height: 40px;
+}
+
+.profile__centered-money {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
 }
