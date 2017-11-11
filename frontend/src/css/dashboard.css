@@ -1,132 +1,123 @@
-.dashboard {
-  margin-top: 150px; }
-
-.dashboard__header {
-  height: 204px;
-  width: 100%;
-  background-image: linear-gradient(119deg, #008ffc, #1adbc9);
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1; }
-  .dashboard__header h1 {
+@media (min-width: 312px) {
+  .dashboard {
+    margin-top: 150px; }
+  .dashboard__header {
+    height: 204px;
+    width: 100%;
+    background-image: linear-gradient(119deg, #008ffc, #1adbc9);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1; }
+    .dashboard__header h1 {
+      text-align: center;
+      font-size: 68px;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 50px; }
+    .dashboard__header h2 {
+      text-align: center;
+      font-size: 20px;
+      line-height: 30px;
+      color: #ffffff;
+      padding-top: 20px;
+      font-weight: lighter; }
+  .dashboard__box-salvadanaio-img {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .box {
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+    margin-bottom: 24px; }
+    .box .row .col-6:first-child {
+      border-right: solid 1px #e0e0e0; }
+  .box__weekly-stats {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    color: #268be2;
+    padding: 16px 16px 0 16px;
+    margin-bottom: 0; }
+  .box__investment-this-week {
+    font-size: 10px;
+    font-weight: bold;
+    color: #268be2;
+    padding: 0 16px; }
+  .box__text-number-in-split {
+    font-size: 18px;
+    font-weight: bold;
     text-align: center;
-    font-size: 68px;
-    font-weight: 900;
-    color: #ffffff;
-    line-height: 50px; }
-  .dashboard__header h2 {
+    color: #585858;
+    margin: 7px 0 0 0; }
+    .box__text-number-in-split strong {
+      font-size: 24px;
+      font-weight: normal; }
+  .box__text-under-number {
+    font-size: 10px;
+    font-weight: bold;
     text-align: center;
-    font-size: 20px;
+    color: #268be2;
+    margin-bottom: 10px; }
+  .box__weekly-stats-amount {
+    padding: 0 16px;
+    font-size: 30px;
     line-height: 30px;
-    color: #ffffff;
-    padding-top: 20px;
-    font-weight: lighter; }
-
-.dashboard__box-salvadanaio-img {
-  position: absolute;
-  right: 0;
-  top: 0; }
-
-.box {
-  border-radius: 8px;
-  background-color: #ffffff;
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
-  position: relative;
-  z-index: 2;
-  margin-bottom: 24px; }
-  .box .row .col-6:first-child {
-    border-right: solid 1px #e0e0e0; }
-
-.box__weekly-stats {
-  font-size: 12px;
-  font-weight: bold;
-  text-align: left;
-  color: #268be2;
-  padding: 16px 16px 0 16px;
-  margin-bottom: 0; }
-
-.box__investment-this-week {
-  font-size: 10px;
-  font-weight: bold;
-  color: #268be2;
-  padding: 0 16px; }
-
-.box__text-number-in-split {
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  color: #585858;
-  margin: 7px 0 0 0; }
-  .box__text-number-in-split strong {
+    margin-top: 8px;
+    color: #585858; }
+    .box__weekly-stats-amount strong {
+      font-size: 40px;
+      font-weight: normal; }
+  .box__left-arrow-action {
+    height: 132px;
+    line-height: 132px;
+    text-align: center;
+    width: 20%;
+    float: right;
+    border-left: solid 1px #e0e0e0; }
+    .box__left-arrow-action img {
+      margin-left: 0; }
+  .box__investment-content {
+    float: left;
+    padding: 16px 0;
+    width: 70%;
+    position: relative;
+    margin-left: 5%; }
+  .dashboard__your-active-investmets {
+    font-size: 12px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: left;
+    color: #268be2; }
+  .box__investment-title {
     font-size: 24px;
-    font-weight: normal; }
+    font-weight: 900;
+    line-height: 1;
+    color: #268be2;
+    margin-bottom: 8px; }
+    .box__investment-title img {
+      margin-right: 8px; }
+  .box__investment-text {
+    font-size: 14px;
+    color: #585858; }
+  .box__investment-perc-oval {
+    width: 32px;
+    height: 32px;
+    background-color: #268be2;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1.6;
+    text-align: center;
+    color: #ffffff;
+    line-height: 32px; } }
 
-.box__text-under-number {
-  font-size: 10px;
-  font-weight: bold;
-  text-align: center;
-  color: #268be2;
-  margin-bottom: 10px; }
-
-.box__weekly-stats-amount {
-  padding: 0 16px;
-  font-size: 30px;
-  line-height: 30px;
-  margin-top: 8px;
-  color: #585858; }
-  .box__weekly-stats-amount strong {
-    font-size: 40px;
-    font-weight: normal; }
-
-.box__left-arrow-action {
-  height: 132px;
-  line-height: 132px;
-  text-align: center;
-  width: 20%;
-  float: right;
-  border-left: solid 1px #e0e0e0; }
-  .box__left-arrow-action img {
-    margin-left: 0; }
-
-.box__investment-content {
-  float: left;
-  padding: 16px 0;
-  width: 70%;
-  position: relative;
-  margin-left: 5%; }
-
-.dashboard__your-active-investmets {
-  font-size: 12px;
-  margin-bottom: 15px;
-  font-weight: bold;
-  text-align: left;
-  color: #268be2; }
-
-.box__investment-title {
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 1;
-  color: #268be2;
-  margin-bottom: 8px; }
-  .box__investment-title img {
-    margin-right: 8px; }
-
-.box__investment-text {
-  font-size: 14px;
-  color: #585858; }
-
-.box__investment-perc-oval {
-  width: 32px;
-  height: 32px;
-  background-color: #268be2;
-  position: absolute;
-  right: 5px;
-  top: 10px;
-  border-radius: 50%;
-  font-size: 14px;
-  font-weight: 900;
-  line-height: 1.6;
-  text-align: center;
-  color: #ffffff;
-  line-height: 32px; }
+@media (min-width: 1024px) {
+  .dashboard {
+    margin-top: 136px; } }
