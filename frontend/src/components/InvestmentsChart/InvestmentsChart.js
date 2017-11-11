@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Chart } from 'chart.js';
 
 class InvestmentsChart extends Component {
-  componentWillUpdate(nextProps, nextState) {
+  componentDidMount(nextProps, nextState) {
     let draw = Chart.controllers.line.prototype.draw;
     Chart.controllers.line = Chart.controllers.line.extend({
       draw: function() {
