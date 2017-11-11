@@ -54,6 +54,24 @@ class DashboardContainer extends Component {
     this.setState({ aggregation, aggregationPastMonth, aggregationPastPastMonth, monthlyAverage });
   }
 
+  componentWillReceiveProps(nextProps) {
+    let reload = false;
+    if (
+      nextProps.user.fuelPercentage !== this.props.user.fuelPercentage ||
+      nextProps.user.fastFoodPercentage !== this.props.user.fastFoodPercentage ||
+      nextProps.user.ecommercePercentage !== this.props.user.ecommercePercentage ||
+      nextProps.user.transportPercentage !== this.props.user.transportPercentage
+    ) {
+      let aggregation = dashboardMonthAggregation(this.props, 2);
+      let aggregationPastMonth = dashboardMonthAggregation(this.props, 3);
+      let aggregationPastPastMonth = dashboardMonthAggregation(this.props, 4);
+      let monthlyAverage = parseInt(aggregation) + parseInt(aggregationPastMonth) + parseInt(aggregationPastPastMonth);
+      this.props.set_invested_value_3_month(monthlyAverage);
+      monthlyAverage = monthlyAverage / 3;
+      this.setState({ aggregation, aggregationPastMonth, aggregationPastPastMonth, monthlyAverage });
+    }
+  }
+
   handleClickSetting = e => {
     console.log(e.target.dataset.name);
     let name = e.target.dataset.name;
@@ -84,19 +102,23 @@ class DashboardContainer extends Component {
   render() {
     return (
       <AppWrapper class="dashboard container">
-        <PageHeader class="dashboard__header" main="Your investments" sub="247€" />
+        <PageHeader
+          class="dashboard__header"
+          main="Your investments"
+          sub={`${(parseInt(this.props.user.investedValue3Month) * 1.42).toFixed(0)}€`}
+        />
         <Box>
           <img className="dashboard__box-salvadanaio-img" src={salvadanaio} alt="" />
           <p className="box__weekly-stats">MONTHLY STATS</p>
           <p className="box__weekly-stats-amount">
-            € <strong>{this.state.aggregation}</strong>
+            € <strong>{parseInt(this.state.aggregation).toFixed(2)}</strong>
           </p>
           <p className="box__investment-this-week">Investment this month</p>
           <hr style={{ marginBottom: 0 }} />
           <div className="row">
             <div className="col-6">
               <p className="box__text-number-in-split">
-                € <strong>{this.state.aggregationPastMonth}</strong>
+                € <strong>{parseInt(this.state.aggregationPastMonth).toFixed(2)}</strong>
               </p>
               <p className="box__text-under-number">Previous month</p>
               <div className="box__weekly-vertical-line" />
@@ -104,7 +126,7 @@ class DashboardContainer extends Component {
 
             <div className="col-6">
               <p className="box__text-number-in-split">
-                € <strong>{this.state.monthlyAverage}</strong>
+                € <strong>{parseInt(this.state.monthlyAverage).toFixed(2)}</strong>
               </p>
               <p className="box__text-under-number">Monthly average</p>
             </div>
