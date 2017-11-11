@@ -17,7 +17,7 @@ import arrowRight from '../assets/img/arrow-right.svg';
 import edit from '../assets/img/edit.svg';
 import fuel from '../assets/img/fuel.svg';
 import hambuger from '../assets/img/hamburger.svg';
-import plane from '../assets/img/plane.png';
+import plane from '../assets/img/plane.svg';
 import ecommerce from '../assets/img/ecommerce.svg';
 
 class DashboardContainer extends Component {
