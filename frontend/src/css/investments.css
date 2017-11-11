@@ -95,7 +95,9 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    z-index: 3; } }
+    z-index: 3; }
+  .investments__header h2 {
+    margin-top: 35px; } }
 
 @media (min-width: 1300px) {
   .investments__chart {
